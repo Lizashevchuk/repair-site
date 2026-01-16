@@ -53,11 +53,6 @@
     .btn:hover {
       background: #333;
     }
-    iframe {
-      width: 100%;
-      border: none;
-      border-radius: 8px;
-    }
     footer {
       background: #111;
       color: #fff;
@@ -99,11 +94,27 @@
 </section>
 
 <section class="reviews">
-  <h2>Залишити відгук</h2>
-  <p>Будь ласка, заповніть форму, і ваш відгук зʼявиться на сайті:</p>
+  <h2>Відгуки клієнтів</h2>
+  <p>Напишіть свій відгук, і він відразу з’явиться на сайті:</p>
   
-  <!-- ЗАМІНИ URL НИЖЧЕ НА СВОЮ GOOGLE FORM -->
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfDummyForm/viewform?embedded=true" height="500"></iframe>
+  <!-- Disqus блок -->
+  <div id="disqus_thread"></div>
+  <script>
+    /**
+     * ЗАМІНИТЬ ТУТ "ТВОЄ-КОРОТКЕ-ІМ'Я" НА SHORTNAME З DISQUS
+     */
+    var disqus_config = function () {
+      this.page.url = window.location.href;
+      this.page.identifier = window.location.pathname;
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://ТВОЄ-КОРОТКЕ-ІМ\'Я.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Будь ласка, увімкніть JavaScript, щоб бачити відгуки.</noscript>
 </section>
 
 <section class="contacts">
