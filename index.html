@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ремонт техніки у Великобританії</title>
-  <meta name="description" content="Професійний ремонт гаджетів та побутової техніки у Hull, Великобританія. Заміна дисплеїв, ремонт батарей, відновлення після води.">
-  <meta name="keywords" content="ремонт, техніка, Hull, телефони, планшети, ремонт гаджетів, Ліза">
+  <title>Professional Device Repair in the UK</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Professional phone and gadget repair in the UK. Screen replacement, battery repair, charging port fix. Fast and reliable service." />
+  <meta name="keywords" content="device repair UK, phone repair Hull, screen replacement, battery repair, gadget repair" />
 
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
       background: #f7f7f7;
       color: #333;
     }
@@ -22,19 +23,15 @@
       text-align: center;
     }
     section {
-      padding: 40px 20px;
       max-width: 900px;
-      margin: auto;
+      margin: 40px auto;
+      padding: 30px 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
     h2 {
       color: #111;
-    }
-    .services, .booking, .reviews, .contacts {
-      background: #fff;
-      border-radius: 12px;
-      padding: 30px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      margin-bottom: 40px;
     }
     ul {
       padding-left: 20px;
@@ -48,7 +45,6 @@
       border-radius: 8px;
       font-weight: bold;
       margin-top: 20px;
-      text-align: center;
     }
     .btn:hover {
       background: #333;
@@ -58,8 +54,9 @@
       color: #fff;
       text-align: center;
       padding: 20px;
+      margin-top: 40px;
     }
-    .contacts a {
+    .contact a {
       color: #111;
       font-weight: bold;
       text-decoration: none;
@@ -70,61 +67,64 @@
 <body>
 
 <header>
-  <h1>Професійний ремонт техніки</h1>
-  <p>Гаджети та побутова техніка • Великобританія</p>
+  <h1>Professional Device Repair</h1>
+  <p>Gadgets & Home Electronics • United Kingdom</p>
 </header>
 
-<section class="services">
-  <h2>Ремонт гаджетів</h2>
-  <p>Я виконую повний спектр ремонту гаджетів будь-якої складності. Працюю акуратно, швидко та з якісними комплектуючими.</p>
+<section>
+  <h2>Device Repair Services</h2>
+  <p>
+    I provide professional repair services for phones, tablets and electronic devices.
+    Fast turnaround, careful work and quality parts.
+  </p>
   <ul>
-    <li>📱 Заміна дисплеїв, сенсорів та скла</li>
-    <li>🔋 Заміна батарей</li>
-    <li>🔌 Ремонт розʼємів зарядки</li>
-    <li>💧 Відновлення після води</li>
-    <li>🛠 Діагностика та складні ремонти</li>
+    <li>📱 Screen and glass replacement</li>
+    <li>🔋 Battery replacement</li>
+    <li>🔌 Charging port repair</li>
+    <li>💧 Water damage recovery</li>
+    <li>🛠 Diagnostics and complex repairs</li>
   </ul>
-  <a 
-    href="https://wa.me/447925474203?text=Добрий%20день!%20Хочу%20записатись%20на%20ремонт%20техніки."
+
+  <a
+    href="https://wa.me/447925474203?text=Hello!%20I%20would%20like%20to%20book%20a%20device%20repair."
     class="btn"
     target="_blank"
   >
-    Записатись у WhatsApp
+    Book via WhatsApp
   </a>
 </section>
 
-<section class="reviews">
-  <h2>Відгуки клієнтів</h2>
-  <p>Напишіть свій відгук, і він відразу з’явиться на сайті:</p>
-  
-  <!-- Disqus блок -->
+<section>
+  <h2>Customer Reviews</h2>
+  <p>Leave your review below:</p>
+
+  <!-- DISQUS COMMENTS -->
   <div id="disqus_thread"></div>
   <script>
-    /**
-     * ЗАМІНИТЬ ТУТ "ТВОЄ-КОРОТКЕ-ІМ'Я" НА SHORTNAME З DISQUS
-     */
     var disqus_config = function () {
       this.page.url = window.location.href;
       this.page.identifier = window.location.pathname;
     };
+
     (function() {
       var d = document, s = d.createElement('script');
-      s.src = 'https://ТВОЄ-КОРОТКЕ-ІМ\'Я.disqus.com/embed.js';
+      // 🔴 REPLACE YOUR_SHORTNAME with your Disqus shortname
+      s.src = 'https://YOUR_SHORTNAME.disqus.com/embed.js';
       s.setAttribute('data-timestamp', +new Date());
       (d.head || d.body).appendChild(s);
     })();
   </script>
-  <noscript>Будь ласка, увімкніть JavaScript, щоб бачити відгуки.</noscript>
+  <noscript>Please enable JavaScript to view the comments.</noscript>
 </section>
 
-<section class="contacts">
-  <h2>Контакти</h2>
-  <p>📞 Телефон: <a href="tel:+447925474203">+44 7925 474203</a></p>
+<section class="contact">
+  <h2>Contact</h2>
+  <p>📞 Phone: <a href="tel:+447925474203">+44 7925 474203</a></p>
   <p>📷 Instagram: <a href="https://instagram.com/liza.2002l7" target="_blank">@liza.2002l7</a></p>
 </section>
 
 <footer>
-  <p>© 2026 Ремонт техніки у Великобританії</p>
+  <p>© 2026 Professional Device Repair • UK</p>
 </footer>
 
 </body>
