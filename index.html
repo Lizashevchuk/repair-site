@@ -101,18 +101,17 @@
   <!-- DISQUS COMMENTS -->
   <div id="disqus_thread"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = window.location.href;
-      this.page.identifier = window.location.pathname;
-    };
+  var disqus_config = function () {
+    this.page.url = window.location.href;
+    this.page.identifier = window.location.pathname;
+  };
 
-    (function() {
-      var d = document, s = d.createElement('script');
-      / s.src = 'https://liza-device-repair.disqus.com/embed.js';
-       s.src = 'https://liza-device-repair.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://liza-device-repair.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
   </script>
   <noscript>Please enable JavaScript to view the comments.</noscript>
 </section>
